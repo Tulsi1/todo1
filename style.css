@@ -6,6 +6,7 @@
 body{
 	height: 100%;
 	width: 100%;
+	background-color: black;
 	background-image: url(back.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
