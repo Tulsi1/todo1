@@ -61,9 +61,9 @@ function newElement() {
    spa.className = "edit";
    spa.appendChild(tx);
    li.appendChild(spa);
-   var edit = document.getElementsByClassName("edit");
-   for (j = 0; j < edit.length; j++) {
-     edit[j].onclick = function() {edit(this.parentNode)};
+   var ed = document.getElementsByClassName("edit");
+   for (j = 0; j < ed.length; j++) {
+     ed[j].onclick = function() {editf(this.parentNode)};
    }
 }
 
@@ -82,13 +82,12 @@ function newElement() {
     var ed = document.getElementsByClassName("edit");
     var k;
     for( k=0; k < ed.length; k++) {
-       ed[k].onclick = function() {edit(this.parentNode)};
+       ed[k].onclick = function() {editf(this.parentNode)};
     }
 
 //Creating the edit function 
-function edit(elmnt){
+function editf(elmnt){
   var x = document.getElementById("myInput").value;
   elmnt.childNodes[0].nodeValue = x;
 }
 
-  
